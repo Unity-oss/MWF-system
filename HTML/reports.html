@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MWF</title>
+  <link rel="stylesheet" href="../CSS/reports.css" />
+</head>
+<body>
+  <header class="main-header">
+  <div class="logo">
+    <h1>MWF System</h1>
+  </div>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="login.html">login</a></li>
+      <li><a href="dash.html">Dashboard</a></li>
+      <li><a href="stock.html">Stock</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="customers.html">Customers</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="login.html" class="Logout">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <div class="reports-container">
+    <header class="reports-header">
+      <h1>Reports</h1>
+    </header>
+
+    <section class="report-controls">
+      <h2>Generate Report</h2>
+      <form class="report-form">
+        <select required>
+          <option value="">Select Report Type</option>
+          <option value="sales">Sales Report</option>
+          <option value="stock">Stock Report</option>
+          <option value="custom">Custom Report</option>
+        </select>
+        <input type="date" placeholder="Start Date" />
+        <input type="date" placeholder="End Date" />
+        <button type="submit">Generate</button>
+      </form>
+    </section>
+
+    <section class="report-output">
+      <h2>Report Results</h2>
+      <div class="report-placeholder">
+        <!-- Replace with dynamic content when connected to backend -->
+        No report data to display.
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

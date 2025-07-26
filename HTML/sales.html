@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MWF</title>
+  <link rel="stylesheet" href="../CSS/sales.css">
+</head>
+<body>
+  <header class="main-header">
+  <div class="logo">
+    <h1>Sales ManagementSystem</h1>
+  </div>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="login.html">login</a></li>
+      <li><a href="dash.html">Dashboard</a></li>
+      <li><a href="stock.html">Stock</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="customers.html">Customers</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="login.html" class="Logout">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+    <section class="sales-form-section">
+      <h2>Record New Sale</h2>
+      <form class="sales-form">
+        <input type="text" placeholder="Customer Name" required>
+        <select required>
+          <option value="">Product Type</option>
+          <option>Wood</option>
+          <option>Furniture</option>
+        </select>
+        <input type="text" placeholder="Product Name" required>
+        <input type="number" placeholder="Quantity" required>
+        <input type="date" required>
+        <select required>
+          <option value="">Payment Type</option>
+          <option>Cash</option>
+          <option>Cheque</option>
+          <option>Bank Overdraft</option>
+        </select>
+        <input type="text" placeholder="Sales Agent Name" required>
+        <label class="transport-label">
+          <input type="checkbox"> Transport Required (Add 5%)
+        </label>
+        <button type="submit">Submit Sale</button>
+      </form>
+    </section>
+
+    <section class="sales-table-section">
+      <h2>Sales History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Type</th>
+            <th>Qty</th>
+            <th>Date</th>
+            <th>Payment</th>
+            <th>Agent</th>
+            <th>Transport</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Sample row -->
+          <tr>
+            <td>Monica Mpairwe</td>
+            <td>Office Table</td>
+            <td>Furniture</td>
+            <td>2</td>
+            <td>2025-07-24</td>
+            <td>Cash</td>
+            <td>Tracy</td>
+            <td>Yes</td>
+            <td><button>Edit</button> <button>Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>

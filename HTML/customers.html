@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MWF</title>
+  <link rel="stylesheet" href="../CSS/css/bootstrap.css">
+  <link rel="stylesheet" href="../CSS/customers.css">
+ 
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class=" col-md-2 sidebar">
+    <h4>MWF</h4>
+    <hr />
+    <nav class="nav flex-column">
+      <ul>
+      <li><a href="dash.html">Dashboard</a></li>
+      <li><a href="stock.html">Stock</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="customers.html">Customers</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><button class="logout-btn"><a href="login.html" class="Logout">Logout</a></button></li>
+      
+    </ul>
+    </nav>
+  </div>
+
+      <!-- Main content -->
+      <div class="col-md-10">
+        <div class="header d-flex justify-content-between align-items-center">
+          <ul class="nav nav-pills mb-3">
+            <li class="nav-item"><a class="nav-link active" href="#">All Customers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">New Customers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">From Central</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Western</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Northern</a></li>
+          </ul>
+          <div>
+            <button class="btn btn-purple">+ Add Customers</button>
+          </div>
+        </div>
+        <input type="text" class="form-control w-25" placeholder="Search...">
+
+        <div class="content">
+        
+          <table class="table table-hover bg-white">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Customer</th>
+                <th scope="col">Email</th>
+                <th scope="col">Location</th>
+                <th scope="col">Orders</th>
+                <th scope="col">Spent</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>unity busingye</td>
+                <td>unity@gmail.com</td>
+                <td>Muyenga</td>
+                <td>7</td>
+                <td>UGX 150000</td>
+                <td><i class="fa fa-ellipsis-v"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>Amito Lucky Mirriam</td>
+                <td>lucky@gmail.com</td>
+                <td>Lugogo</td>
+                <td>12</td>
+                <td>UGX 2500000</td>
+                <td><i class="fa fa-ellipsis-v"></i></td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+
+          <nav>
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item active"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">24</a></li>
+              <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../CSS/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
