@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MWF</title>
+  <link rel="stylesheet" href="CSS/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/dash.css">
+  
+</head>
+<body>
+  <div class="sidebar">
+   <img src="../IMAGES/unityb.jpg" class="circle-img" width="80px" alt="CEO">
+    <h5>Unity Busingye</h5>
+    <small>unity@mwf.com</small>
+     
+    <hr />
+    <nav class="nav flex-column">
+      <ul>
+      <li><a href="dash.html">Dashboard</a></li>
+      <li><a href="stock.html">Stock</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="customers.html">Customers</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><button class="logout-btn"><a href="index.html" class="Logout">Logout</a></button></li>
+      
+    </ul>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3>Inventory Management</h3>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-3"><div class="card-box"><h6>Total Products</h6><h4>5483</h4></div></div>
+      <div class="col-md-3"><div class="card-box"><h6>Orders</h6><h4>2859</h4></div></div>
+      <div class="col-md-3"><div class="card-box"><h6>Total Stock</h6><h4>5483</h4></div></div>
+      <div class="col-md-3"><div class="card-box"><h6>Out of Stock</h6><h4 class="text-danger">38</h4></div></div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-4"><div class="card-box"><h6>Total Customers</h6><h4>583K</h4></div></div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <h6>Inventory Values</h6>
+          <div class="font-sans leading-normal tracking-normal mt-20">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="myChart"></canvas>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Sold', 'Unsold'],
+                datasets: [{
+                    data: [68, 32],
+                    backgroundColor: [
+                        'rgba(0, 123, 131, 0.7)',
+                        'rgba(242, 242, 242, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(0, 123, 131, 1)',
+                        'rgba(242, 242, 242, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        fontColor: 'black',
+                        fontSize: 14,
+                        padding: 20
+                    }
+                }
+            }
+        });
+    </script>
+
+</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-box">
+          <h6>Top 10 Stores by Sales</h6>
+          <ul class="list-group list-group-flush text-start">
+            <li class="list-group-item">Gateway UG – 678k</li>
+            <li class="list-group-item">The Rustic Tree – 721k</li>
+            <li class="list-group-item">Velvet Vine – 712k</li>
+            <li class="list-group-item">Blue Horizon – 599k</li>
+            <li class="list-group-item">Nairobi Naturals – 556k</li>
+            <li class="list-group-item">Crimson Craftsmen – 344k</li>
+            <li class="list-group-item">Todi Traders – 289k</li>
+            <li class="list-group-item">Whimsy Wood – 213k</li>
+            <li class="list-group-item">Microstate – 198k</li>
+            <li class="list-group-item">Emporium – 123k</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card-box">
+          <h6>Expense vs Profit (Last 6 months)</h6>
+          <div class="chart-placeholder">[Line Chart Placeholder]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="CSS/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
