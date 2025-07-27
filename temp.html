@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MWF</title>
+  <link rel="stylesheet" href="CSS/stock.css">
+</head>
+<body>
+
+  <header class="main-header">
+  <div class="logo">
+    <h1>MWF System</h1>
+  </div>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">login</a></li>
+      <li><a href="dash.html">Dashboard</a></li>
+      <li><a href="stock.html">Stock</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="customers.html">Customers</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="index.html" class="Logout">Logout</a></li>
+      
+      
+    </ul>
+  </nav>
+</header>
+
+  <div class="stock-container">
+    <header class="stock-header">
+      <h1>Stock Management</h1>
+    </header>
+
+    <section class="stock-form-section">
+      <h2>Add New Stock</h2>
+      <form class="stock-form">
+        <input type="text" placeholder="Product Name" required>
+        <select>
+          <option>Wood</option>
+          <option>Furniture</option>
+        </select>
+        <input type="number" placeholder="Cost Price" required>
+        <input type="number" placeholder="Product Price" required>
+        <input type="number" placeholder="Quantity" required>
+        <input type="text" placeholder="Supplier Name" required>
+        <input type="date">
+        <input type="text" placeholder="Quality">
+        <input type="text" placeholder="Color (optional)">
+        <input type="text" placeholder="Measurements (optional)">
+        <button type="submit">Add Stock</button>
+      </form>
+    </section>
+
+    <section class="stock-table-section">
+      <h2>Stock List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Qty</th>
+            <th>Cost</th>
+            <th>Price</th>
+            <th>Supplier</th>
+            <th>Date</th>
+            <th>Actions</th
