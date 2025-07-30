@@ -24,7 +24,7 @@
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
                 
-                  <form class="login-form needs-validation" action="dash.html" method="get" novalidate>
+                  <form class="login-form needs-validation" action="dash.html" method="POST" novalidate>
                     <div class="d-flex align-items-center mb-3 pb-1">
                       <span class="h1 fw-bold mb-0">Logo</span>
                     </div>
@@ -83,6 +83,29 @@
         });
     })();
   </script>
+  <script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = document.querySelector('input[name="email"]').value;
+
+    fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    })
+    .then(response => response.text())
+    .then(data => {
+      console.log(data);
+      alert("Login successful! Email notification sent.");
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert("Login failed or email could not be sent.");
+    });
+  });
+</script>
+
 
   <footer class="footer text-center py-3 text-white bg-dark">
     &copy; Copyright 2025 - Mayondo Wood & Furniture
